@@ -1,7 +1,5 @@
 FROM roundcube/roundcubemail
 
-MAINTAINER Claudio Ferreira <filhocf@gmail.com>
-
 ENV DEBIAN_FRONTEND noninteractive
 
 # Get Extra Plugins and Skins packages
@@ -57,7 +55,6 @@ RUN \
     mkdir -p skins/chameleon-blue; \
     curl -L https://github.com/filhocf/roundcube-chameleon-blue/archive/master.tar.gz | \
     tar xz --strip-components=1 -C skins/chameleon-blue; \
-
 
 #cd plugins; \
 #echo "Add Kolab's plugin ===============>>>>>>>>>>>>>"; \
