@@ -54,7 +54,7 @@ RUN \
     # Chameleon Blue theme
     mkdir -p skins/chameleon-blue; \
     curl -L https://github.com/filhocf/roundcube-chameleon-blue/archive/master.tar.gz | \
-    tar xz --strip-components=1 -C skins/chameleon-blue; \
+    tar xz --strip-components=1 -C skins/chameleon-blue
 
 #cd plugins; \
 #echo "Add Kolab's plugin ===============>>>>>>>>>>>>>"; \
