@@ -7,7 +7,7 @@ WORKDIR /usr/src/roundcubemail/
 RUN \
 # Get plugin
     # Context Menu
-#    mkdir -p plugins/contextmenu; \
+    mkdir -p plugins/contextmenu; \
 #    curl -L https://github.com/johndoh/roundcube-contextmenu/archive/master.tar.gz | \
 #    tar xz --strip-components=1 -C plugins/contextmenu; \
     # Context Menu Folder
