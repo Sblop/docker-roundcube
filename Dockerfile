@@ -12,6 +12,13 @@ RUN \
     curl -L https://github.com/johndoh/roundcube-contextmenu/archive/master.tar.gz | \
     tar xz --strip-components=1 -C plugins/contextmenu; \
 
+    # Add Carddav functions to roundcube
+    mkdir -p plugins/carddav; \
+    curl -L https://github.com/blind-coder/rcmcarddav/releases/download/v3.0.3/carddav-3.0.3.tar.bz2 | \
+    tar xz --strip-components=1 -C plugins/carddav; \
+
+
+
 # Get themes
 
     # Mabola theme
