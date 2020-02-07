@@ -7,14 +7,14 @@ WORKDIR /var/www/html
 
 # Get plugin
     # Context Menu
-RUN mkdir -p plugins/contextmenu \
-    && curl -L https://github.com/johndoh/roundcube-contextmenu/archive/master.tar.gz \
-    &&tar xz --strip-components=1 -C plugins/contextmenu
+RUN mkdir -p plugins/contextmenu 
+RUN curl -L https://github.com/johndoh/roundcube-contextmenu/archive/master.tar.gz \
+    tar xz --strip-components=1 -C plugins/contextmenu
  
 # Add Carddav functions to roundcube
-RUN mkdir -p plugins/carddav \
-    && curl -L https://github.com/blind-coder/rcmcarddav/releases/download/v3.0.3/carddav-3.0.3.tar.bz2 | \
-    && tar xz --strip-components=1 -C plugins/carddav
+RUN mkdir -p plugins/carddav 
+RUN curl -L https://github.com/blind-coder/rcmcarddav/releases/download/v3.0.3/carddav-3.0.3.tar.bz2 \
+    tar xz --strip-components=1 -C plugins/carddav
 
 # Get themes
 
