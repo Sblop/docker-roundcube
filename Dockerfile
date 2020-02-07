@@ -3,7 +3,7 @@ FROM roundcube/roundcubemail
 ENV DEBIAN_FRONTEND noninteractive
 
 # Get Extra Plugins and Skins packages
-WORKDIR /var/www/html #/usr/src/roundcubemail/
+WORKDIR /var/www/html
 RUN
 # Get plugin
     
